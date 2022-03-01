@@ -1,0 +1,4 @@
+object destructuring: [a, b] = [10, 20] or {a, b} = {a: 1, b: 2} 
+rest : function (...args) {}      // collects all arguments into an array called "args"
+spread : ...args      // will spread the elements of the array into individual elements
+template literals : `string text ${expression} string text`
