@@ -33,12 +33,12 @@ Cons:
 - bunch of unit test during prototyping phase is gonna be annoying
 
 ## Testing frameworks
-Jest
+[Jest](https://jestjs.io/docs/setup-teardown)
 - beforeEach and afterEach for setting up the tests
 - describe to group test
 - assertion libraries - check documentation for each framework
 
-Mocha
+[Mocha](https://mochajs.org/)
 - requires external assertion libraries, `assert` comes with node. Chai is a popular one to be used with Mocha.
 
 
@@ -54,7 +54,7 @@ forces you to think about all the edge cases
 
 ### BDD
 - test some specific example behaviour
-- test can come before or after writting
+- test can come before or after writing
 
 ### Tradeoff between reliability and development speed
 - Few tests are better than no test
