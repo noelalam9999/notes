@@ -32,6 +32,12 @@ Cons:
 - development speed in short term
 - bunch of unit test during prototyping phase is gonna be annoying
 
+## What should you test for?
+- check if you can even call the function
+- input types - handle the ones that you want gracefully and catch all the edge cases
+- check 
+
+
 ## Testing frameworks
 [Jest](https://jestjs.io/docs/setup-teardown)
 - beforeEach and afterEach for setting up the tests
