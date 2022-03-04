@@ -150,3 +150,148 @@ function logContext(null) {
 - The best way to handle monetary calculations in JS is to always do the required operations in cents (i.e. using integers: multiply the original amount by 100 at the beginning, and then divide by 100 again at the end).
 
 All code is actually converted to binary 
+
+## Delegation chain
+- Properties lookup in JS objects follows a delegation “chain” (aka the “prototype chain”).
+- To set a link in this chain when creating a new object use Object.create(parentObj).
+- If a property lookup fails until the last step in the chain, undefined is returned.
+- When a property is defined on an object down the chain, it “obfuscates” the same property in other objects up the chain.
+
+```javascript
+const arr = [];
+arr.push(3)
+arr.hasOwnProperty('push') // false
+Array.prototype.hasOwnProperty('push') // true
+```
+you can check where the delegation is by typing
+```javascript
+arr.__proto__ === Array.prototype // true
+```
+
+you can also assing delegation, should not really be done - leads to slow operation in modern engines
+```javascript
+const team = {learning: 'code'}
+const student = Object.create(team) // creates the delegation link
+student.name = 'Sarah'
+student.learning // accessible and returns 'code'
+// BUT
+console.log(student)  // only has {'name': Sarah}
+
+student.__proto__ == team // true
+```
+
+## Classes and subclasses
+- Help with `Dont repeat yourself`
+- In programming, “class” is a term used to define a group of elements that exhibit the same properties (very much like in natural language).
+- The main 3 instantiation styles are: functional, pseudo-classical, and ES6.
+- A sub-class has all the properties and methods of its parent class, plus other ones that are unique to it.
+- Real classes have instances who are completely independent from each other.
+- In JS this doesn’t exist when you use delegation, as modifying an object up the chain affects all objects that delegate to it.
+
+- the classes are actually forced to javascipt as many developers came from java which uses classes
+- javascript is functional, prettily separating methods and variables, and classes actually mix methods and variables together
+- classes are human concept, do not have a physical representation in memory
+
+### Functional
+Simple function that crates a object and copies methods from shared object and returns
+
+```javascript
+// class
+function Phone (number) {
+  var result = {};
+  result.number = number;
+  Object.assign(result, phoneMethods); 
+  return result;
+};
+
+var phoneMethods = {};
+phoneMethods.dial = function (number) {
+  console.log('Dialing', number);
+};
+
+var motorola = Phone(695323871);
+```
+
+```javascript
+// Sub-class
+
+function SmartPhone (number, email) {
+  var result = Object.create(Person.prototype) // delegate to the methods 
+  result = Phone(number);
+  result.email = email;
+  // Object.assign(result, smartPhoneMethods); // due to delegation no need for this line
+  return result;
+};
+
+SmartPhone.prototype.sendEmail = function (email) {  // assign directly to SmartPhone prototype to access
+  console.log('Emailing', email);
+};
+
+var iPhone = SmartPhone(642503917, 'jack@apple.com');
+```
+
+### Pseudo classical approach
+Stores shared methods in the prototype
+JS does magic for you - new keyword to initiate, assign the functions
+
+
+```javascript
+// Class
+
+function Phone (number) {
+  // var this = Object.create(Phone.prototype);
+  this.number = number;
+  // return this;
+};
+
+Phone.prototype.dial = function (number) {
+  console.log('Dialing', number);
+};
+
+var motorola = new Phone(695323871);
+```
+
+```javascript
+// Sub-class
+
+function SmartPhone (number, email) {
+  // var this = Object.create(SmartPhone.prototype);
+  Phone.call(this, number);  // gotta bind the context to the parent class !!
+  this.email = email;
+  // return this;
+};
+
+SmartPhone.prototype = Object.create(Phone.prototype);  // gotta delegate to the parent
+SmartPhone.prototype.constructor = SmartPhone;  // also need to correct constructor for it to point to itself
+SmartPhone.prototype.sendEmail = function (email) {
+  console.log('Emailing', email);
+};
+
+var iPhone = new SmartPhone(642503917, 'jack@apple.com');
+```
+
+### ES6
+still need to use new keyword
+only syntactic sugar, it all works as in the pseudo classical approach
+```javascript
+class Phone {
+  constructor (number) {
+    this.number = number;
+  }
+  dial (number) {
+    console.log('Dialing', number);
+  }
+}
+
+// Sub-class
+
+class SmartPhone extends Phone { // inheritance
+  constructor (number, email) {
+    super(number);  // this just says to call the constructor of parent class and pass the arguments that the parent class needs
+    this.email = email;
+  }
+  sendEmail (email) {
+    console.log('Emailing', email);
+  }
+}
+```
