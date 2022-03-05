@@ -306,11 +306,11 @@ class SmartPhone extends Phone { // inheritance
 - The standard keeps evolving: new language features are introduced (i.e. syntax and functionality), some can be removed.
 - ES6 introduces some new interesting concepts, for example: let and const, arrow functions, default and trailing function parameters, the spread operator, template literals, enhanced object properties, modules (import / export), class definitions, symbols, maps / sets, and promises.
 ### ES6 biggest releases
-### const and let
+### Const and let
 - `const` vs `let` - before only `var` and the difference was indicated for constances with all capitals and underscores and variables with camelCase
 - `var` element is on global scope, so in two nested loops the var would be the same. so lets not use those
 
-### arrow functions
+### Arrow functions
 - no access to arguments object and this is not bound to the function! also cannot be refferenced after before declaring
 - very useful for anonymous callbacks
 ```javascript
@@ -324,14 +324,14 @@ const sayHi = () => {
   console.log('Hi')
 }
 ```
-### default function parameters
+### Default function parameters
 ```javascript
 function sayHi (name = 'there') {
   console.log(`Hi ${name}`)
 }
 ```
 
-### spread operator
+### Spread operator
 ```javascript
 const mains = ['sandwich', 'salad']
 const desserts = ['icecream', 'brownie']
@@ -348,7 +348,7 @@ const menu = Object.assign({}, mains, desserts)
 const menu = {...mains, ...deserts}
 ```
 
-### template literals
+### Template literals
 ```javascript
 const songNum = 376
 const msg = 'Hello you have' + songNum + 'songs.'
@@ -369,6 +369,33 @@ const btn =  {
   color
 }
 ```
+
+### Chain operator
+- if this exists, I will carry on, if not, then I will return 
+
+```javascript
+const alex = {
+  name: 'Alex',
+  pet: {
+    name: 'Mick',
+  },
+  address: {
+    city: 'London'
+  }
+}
+
+function petName(person) {
+  return person.pet?.name
+}
+``` 
+
+### Nullish coalescing 
+- asks if left side is null and if yes then return right side
+```javascript
+person.pet?.name ?? 'No pet'
+```
+- do not confuse with `||`, this asks if on the left side is any null-ish value (empty string, 0)
+- better to not use `||` or `&&` just to be more explicit. preferably to use `??` for shortcutting.
 
 ### Modules
 - export functions, variables
