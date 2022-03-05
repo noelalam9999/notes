@@ -10,7 +10,8 @@
 - Objects, Arrays, Functions
 - collection of properties
 ```javascript
-const cat = {
+const
+        cat = {
     name: "Fluffy",
     age: 3,
 }
@@ -180,6 +181,9 @@ console.log(student)  // only has {'name': Sarah}
 student.__proto__ == team // true
 ```
 
+Use `__.proto__` on instances and use `.prototype` on constructor. 
+`Array.__proto__` actually returns to prototype function, 
+
 ## Classes and subclasses
 - Help with `Dont repeat yourself`
 - In programming, “class” is a term used to define a group of elements that exhibit the same properties (very much like in natural language).
@@ -295,3 +299,85 @@ class SmartPhone extends Phone { // inheritance
   }
 }
 ```
+
+## ESNext
+- The next release that is coming up in javascript
+- JavaScript is based on a standard, named “ECMAScript”.
+- The standard keeps evolving: new language features are introduced (i.e. syntax and functionality), some can be removed.
+- ES6 introduces some new interesting concepts, for example: let and const, arrow functions, default and trailing function parameters, the spread operator, template literals, enhanced object properties, modules (import / export), class definitions, symbols, maps / sets, and promises.
+### ES6 biggest releases
+### const and let
+- `const` vs `let` - before only `var` and the difference was indicated for constances with all capitals and underscores and variables with camelCase
+- `var` element is on global scope, so in two nested loops the var would be the same. so lets not use those
+
+### arrow functions
+- no access to arguments object and this is not bound to the function! also cannot be refferenced after before declaring
+- very useful for anonymous callbacks
+```javascript
+function sayHi () {
+  console.log('Hi')
+}
+
+const sayHi = () => {
+  // no arguments object
+  // no this of function but enclosing scope
+  console.log('Hi')
+}
+```
+### default function parameters
+```javascript
+function sayHi (name = 'there') {
+  console.log(`Hi ${name}`)
+}
+```
+
+### spread operator
+```javascript
+const mains = ['sandwich', 'salad']
+const desserts = ['icecream', 'brownie']
+
+const menu = [].concat(mains).concat(desserts)
+const menu = [...mains, ...desserts]
+```
+```javascript
+// in es9 added for object as well!
+const mains = {sandwich: 8, salad: 3}
+const deserts = {icecream: 4, brownie: 5}
+
+const menu = Object.assign({}, mains, desserts)
+const menu = {...mains, ...deserts}
+```
+
+### template literals
+```javascript
+const songNum = 376
+const msg = 'Hello you have' + songNum + 'songs.'
+const msg = `Hello you have ${songNum} songs.`
+```
+
+### Enhanced object properties
+```javascript
+const color = 'red'
+const btn =  {
+  // props...
+  color: color
+}
+
+// same as 
+const btn =  {
+  // props...
+  color
+}
+```
+
+### Modules
+- export functions, variables
+- import them in different files
+
+## Polyfilling and transpilling
+- You can fully control your code environment in a server, but not in a browser.
+- Remember to check what language features are supported where your code needs to be executed.
+- Polyfilling means adding the code required for the new feature to run properly.
+- Transpiling is a way to translate code that uses new features into the equivalent code if it was using older features. Most popular library is [babel](https://babeljs.io/)
+- to check for support of features in browsers [caniuse.com](http://caniuse.com/)
+- to check for backend node.js [node.green](http://node.green/)
