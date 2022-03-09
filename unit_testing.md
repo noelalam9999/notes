@@ -1,8 +1,10 @@
 # Unit testing
-
 - great for refactoring
 - makes you think about architecture
 
+## Automated tests
+- Can be divided into unit tests, integration tests, and end-to-end tests
+- Improve code reliability, but reduce development speed in the short term
 
 ## Unit test
 A single function performs as expected, i.e. given an input we expect a specific output. Great for checking edge cases.
@@ -39,6 +41,7 @@ Cons:
 
 
 ## Testing frameworks
+- Assertion styles (assert, expect, should)
 [Jest](https://jestjs.io/docs/setup-teardown)
 - beforeEach and afterEach for setting up the tests
 - describe to group test
@@ -51,6 +54,8 @@ Cons:
 ## TDD test driven development and BDD behaviour driven development
 code coverage - number of lines covered by tests
 ### TDD
+- In TDD you always start by implementing a test that fails, and then write the code to fix it, proceeding one test at a time
+
 - first all test should be written
 - check that all tests are failing
 - write code and try to pass all tests
@@ -59,6 +64,7 @@ code coverage - number of lines covered by tests
 forces you to think about all the edge cases
 
 ### BDD
+- in BDD you test a list of expected inputs / outputs based on common use cases
 - test some specific example behaviour
 - test can come before or after writing
 
