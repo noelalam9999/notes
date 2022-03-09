@@ -42,22 +42,27 @@
 - WA: [NAME](https://github.com/tinazhouhui/weekly-assessment-1), [master](https://github.com/tinazhouhui/weekly-assessment-1-master)
 - Lectures: [NOTES](programming_languages.md)
 - [Videos]()
-- [Exercise](https://github.com/tinazhouhui/the-polyglot-exercise) (master included)
+- [The polyglot](https://github.com/tinazhouhui/the-polyglot-exercise) (master included)
 
 ### Tuesday
 - TP: [Yarra](https://github.com/tinazhouhui/tp-yarra), [master](https://github.com/tinazhouhui/tp-yarra/blob/master/master.js)
 - Lectures: [Data Structures 1](data_structures.md)
 - [Videos](https://drive.google.com/drive/folders/1L15LMYyGDicMIwWriSpOirHg0wgS_CpE) 
-- [Exercise](https://github.com/tinazhouhui/data-structures-1-exercise), [master](https://github.com/tinazhouhui/data-structures-1-exercise-master)
+- [Data structures 1](https://github.com/tinazhouhui/data-structures-1-exercise), [master](https://github.com/tinazhouhui/data-structures-1-exercise-master)
 
 ### Wednesday
 - TP: [Methodize](https://github.com/tinazhouhui/tp-methodize), [master]()
 - Lectures: [Data structures 2](data_structures.md)
 - [Videos](https://drive.google.com/drive/folders/1AjwZ-wtH0aZE37thL4ptzn-cPZLItNxC)
-- [Exercise](), [master]()
+- [Data structures 2](https://github.com/tinazhouhui/data-structures-2-exercise), [master]()
 
-
-### DAY
+### Thursday
+- TP: [Circular list](), [master]()
+- Lectures: [Data structures 3](data_structures.md)
+- [Videos]()
+- same as yesterday
+- 
+- ### DAY
 - TP: [NAME](), [master]()
 - Lectures: [NOTES]()
 - [Videos]()
