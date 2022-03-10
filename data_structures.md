@@ -54,7 +54,6 @@ function one () {
 - values do not have to be unique
 - good for any branching structure
 
-
 ## Array
 - oldest and one of the most important data structures
 - It’s an ordered collection of elements, stored next to each other in memory. 
@@ -71,3 +70,25 @@ function one () {
 - When two or more keys are assigned the same index you have a key “collision” (aka “conflict”). 
 - Key collisions are handled through linked lists. 
 - To avoid too many collisions, or the usage of unnecessary space, hash tables can self-resize.
+
+## Binary tree
+- It’s a tree where each node has at most two children. (if each node has only one node then it can still be a binary one)
+- The max number of possible nodes is (2^h)-1. h = number of vertical levels.
+- Is considered “complete” if every level, except possibly the last, is completely filled, and all nodes are as far left as possible.
+- Is considered “full” if every node other than the leaves has two children.
+- subset of trees, not a data structure on their own
+
+## Heap
+- It’s a semi-sorted tree, where parent nodes values are always greater (or always smaller) than those of their children.
+- The most used type of heap is a binary heap, which is a binary tree, ordered as we just mentioned and complete.
+- the nodes on one level do not have any relationship to each other directly
+- It’s a good tradeoff between the cost of maintaining complete order and the cost of searching through random chaos.
+- It’s useful whenever you need to immediately find the object with the highest (or lowest) priority.
+
+## Binary search tree
+- It’s a sorted binary tree. 
+- Each node can have maximum 2 children (left and right).
+- The value in each node must be greater or equal to any value stored in the left sub-tree, and smaller or equal to any value stored in the right sub-tree.
+- The shape of the tree depends entirely on the order of insertion or deletion of its nodes.
+- balanced = all branches have more or less the same height, the distance from one leaf to the root compared to the distance of any other leaf to the root does not have a difference more than one step
+  - takes approximately same time to reach the root

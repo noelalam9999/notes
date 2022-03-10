@@ -27,13 +27,13 @@
 
 ### Friday
 - TP: [Clonator](https://github.com/tinazhouhui/tp-clonator)
-- Lectures: [Advanced_JS_2](advanced_js.md)
+- Lectures: [Advanced_JS_2](advanced_js.md/#delegation-chain)
 - [Videos](https://drive.google.com/drive/folders/1dhGkHAqHUr0njQKXg5lB2ORqO_RewZWp)
 - [Sub class dance party](https://github.com/tinazhouhui/sub-class-dance-party-exercise), [master](https://github.com/tinazhouhui/sub-class-dance-party-exercise-master)
 
 ### Saturday
 - TP: [Evented thing](https://github.com/tinazhouhui/tp-evented-thing)
-- Lectures: [Advanced_JS_3](advanced_js.md)
+- Lectures: [Advanced_JS_3](advanced_js.md/#esnext)
 - [Videos](https://drive.google.com/drive/folders/1NPs3mRFNv8n0CyXZyn6K4TqdmTWAI5oF)
 - Exercise: Sub class dance party finish 
 
@@ -66,9 +66,7 @@
 - TP: [NAME](), [master]()
 - Lectures: [Data structured 3](data_structures.md)
 - [Videos](https://drive.google.com/drive/folders/1OU-1XZqIIG2pqhpQivli9mcHjIlvDixo)
-- [Exercise](), [master]() 
- 
- 
+- [Exercise](), [master]()
 
 - ### DAY
 - TP: [NAME](), [master]()
