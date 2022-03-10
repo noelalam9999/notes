@@ -15,7 +15,7 @@
 
 ### Wednesday
 - TP: [Highest Word Count](https://github.com/tinazhouhui/tp-highest-word-count)
-- Lectures: [NOTES](unit_testing.md)
+- Lectures: [Unit testing](unit_testing.md)
 - [Videos](https://drive.google.com/drive/folders/1Y1FTMHRKeBGH_asvS9-UMavl_hnQCRia)
 - [Da tester](https://github.com/tinazhouhui/da-tester-exercise)
 
@@ -39,9 +39,9 @@
 
 ## Week 2
 ### Monday
-- WA: [NAME](https://github.com/tinazhouhui/weekly-assessment-1), [master](https://github.com/tinazhouhui/weekly-assessment-1-master)
-- Lectures: [NOTES](programming_languages.md)
-- [Videos]()
+- WA: [Weekly assignment 1](https://github.com/tinazhouhui/weekly-assessment-1), [master](https://github.com/tinazhouhui/weekly-assessment-1-master)
+- Lectures: [Programming languages](programming_languages.md)
+- [Videos](https://drive.google.com/drive/folders/1aIQPBqk-uvCnoBlGB0E_UMI-XppkeHjP)
 - [The polyglot](https://github.com/tinazhouhui/the-polyglot-exercise) (master included)
 
 ### Tuesday
@@ -51,17 +51,25 @@
 - [Data structures 1](https://github.com/tinazhouhui/data-structures-1-exercise), [master](https://github.com/tinazhouhui/data-structures-1-exercise-master)
 
 ### Wednesday
-- TP: [Methodize](https://github.com/tinazhouhui/tp-methodize), [master]()
-- Lectures: [Data structures 2](data_structures.md)
+- TP: [Methodize](https://github.com/tinazhouhui/tp-methodize)
+- Lectures: [Data structures 2](data_structures.md/#set)
 - [Videos](https://drive.google.com/drive/folders/1AjwZ-wtH0aZE37thL4ptzn-cPZLItNxC)
 - [Data structures 2](https://github.com/tinazhouhui/data-structures-2-exercise), [master]()
 
 ### Thursday
-- TP: [Circular list](), [master]()
-- Lectures: [Data structures 3](data_structures.md)
-- [Videos]()
+- TP: [Circular list](https://github.com/tinazhouhui/tp-circular-list), [master]()
+- Lectures: [Data structures 3](data_structures.md/#binary-tree)
+- [Videos](https://drive.google.com/drive/folders/1OU-1XZqIIG2pqhpQivli9mcHjIlvDixo)
 - same as yesterday
-- 
+
+- ### DAY
+- TP: [NAME](), [master]()
+- Lectures: [Data structured 3](data_structures.md)
+- [Videos](https://drive.google.com/drive/folders/1OU-1XZqIIG2pqhpQivli9mcHjIlvDixo)
+- [Exercise](), [master]() 
+ 
+ 
+
 - ### DAY
 - TP: [NAME](), [master]()
 - Lectures: [NOTES]()
