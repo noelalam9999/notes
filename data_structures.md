@@ -92,3 +92,33 @@ function one () {
 - The shape of the tree depends entirely on the order of insertion or deletion of its nodes.
 - balanced = all branches have more or less the same height, the distance from one leaf to the root compared to the distance of any other leaf to the root does not have a difference more than one step
   - takes approximately same time to reach the root
+
+## Graph
+- It’s a finite set of vertices (aka nodes), that can have edges (aka lines) to connect them.
+- A “path” is a sequence of edges between two vertices (can have more paths between two vertices).
+- Two vertices are considered “adjacent” if they’re directly connected by an edge.
+- Graphs can be directed or undirected (edges have directions, can be two directional), and weighted or unweighted (aka homogeneous) (numeric weight to each edge).
+- Trees can be considered a subset of unweighted graphs.
+- Operations that you can perform on graphs include:
+  - adding and removing vertices 
+  - adding and removing edges 
+  - modifying the weight or the direction of edges
+- Common queries that are executed on graphs include:
+  - checking if a vertex exists
+  - checking if two vertices are adjacent
+  - finding all vertices adjacent to a given vertex
+  - finding the path between two vertices
+- An edge of is considered a loop or self edge if it connects to itself
+- multiedge or parallel edge - same edge multiple times
+- if a graph without any loops or multiedges - simple graph
+- if no edges = empty graph
+- The maximum possible number of edges in a directed simple graph is almost the square of the number of vertices (v * (v-1)). If indirected, the number is half as there can only be one edge between two vertices. 
+- When the number of edges in a graph is above half of its maximum possible edges, the graph is called “dense”. And otherwise is called “sparse”.
+- A graph is considered “connected” if there’s a path from each vertex to any other vertex. (if the graph is directed and you can still do so, it is a strongly connected graph) A path in a graph that includes the repetition of certain nodes is considered a “cycle”.
+- A graph that doesn’t allow any cycles is called and “acyclic” graph.
+### Graph representation
+- graph is made of set of vertices and edges. Possibly to add a weight.
+- adjancency matrix - the rows and columns are the nodes, if there is a edge between two nodes = 1, otherwise 0. If no loops, then diagonal will be 0. if undirected,  then the matrix will be symmetrical along the diagonal.
+- An adjacency matrix can be used to efficiently represent a dense graph, and an adjacency list can be used for a sparse graph.
+  - adjacency list - can be a hash table where each hash is the vertice. Filling only nodes that are adjacent, and not the 0
+- 

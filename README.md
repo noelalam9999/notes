@@ -57,16 +57,16 @@
 - [Data structures 2](https://github.com/tinazhouhui/data-structures-2-exercise), [master]()
 
 ### Thursday
-- TP: [Circular list](https://github.com/tinazhouhui/tp-circular-list), [master]()
+- TP: [Circular list](https://github.com/tinazhouhui/tp-circular-list)
 - Lectures: [Data structures 3](data_structures.md/#binary-tree)
 - [Videos](https://drive.google.com/drive/folders/1OU-1XZqIIG2pqhpQivli9mcHjIlvDixo)
-- same as yesterday
+- same as wednesday
 
-- ### DAY
-- TP: [NAME](), [master]()
-- Lectures: [Data structured 3](data_structures.md)
-- [Videos](https://drive.google.com/drive/folders/1OU-1XZqIIG2pqhpQivli9mcHjIlvDixo)
-- [Exercise](), [master]()
+- ### Friday
+- TP: [Common ancestor](https://github.com/tinazhouhui/tp-common-ancestor), [master]()
+- Lectures: [Data structured 3](data_structures.md/#graphs)
+- [Videos](https://drive.google.com/drive/folders/1Y33TG-LUG7N_ie0nddvgj3zwW8Zl8FkD)
+- same as wednesday
 
 - ### DAY
 - TP: [NAME](), [master]()
