@@ -54,7 +54,7 @@
 - TP: [Methodize](https://github.com/tinazhouhui/tp-methodize)
 - Lectures: [Data structures 2](data_structures.md/#set)
 - [Videos](https://drive.google.com/drive/folders/1AjwZ-wtH0aZE37thL4ptzn-cPZLItNxC)
-- [Data structures 2](https://github.com/tinazhouhui/data-structures-2-exercise), [master]()
+- [Data structures 2](https://github.com/tinazhouhui/data-structures-2-exercise), (master included)
 
 ### Thursday
 - TP: [Circular list](https://github.com/tinazhouhui/tp-circular-list)
@@ -63,11 +63,18 @@
 - same as wednesday
 
 - ### Friday
-- TP: [Common ancestor](https://github.com/tinazhouhui/tp-common-ancestor), [master]()
+- TP: [Common ancestor](https://github.com/tinazhouhui/tp-common-ancestor)
 - Lectures: [Data structured 3](data_structures.md/#graphs)
 - [Videos](https://drive.google.com/drive/folders/1Y33TG-LUG7N_ie0nddvgj3zwW8Zl8FkD)
 - same as wednesday
 
+- ### Saturday
+- TP: [Traversal spiral](https://github.com/tinazhouhui/tp-spiral-traversal), [master]()
+- Lectures: [Algorithms 1](algorithms.md)
+- [Videos](https://drive.google.com/drive/folders/1VQHpv4WroxdSbsaAMiUO_yEEMiWwtcJD)
+- [Exercise](), [master]()
+- 
+- 
 - ### DAY
 - TP: [NAME](), [master]()
 - Lectures: [NOTES]()
