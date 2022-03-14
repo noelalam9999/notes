@@ -62,18 +62,25 @@
 - [Videos](https://drive.google.com/drive/folders/1OU-1XZqIIG2pqhpQivli9mcHjIlvDixo)
 - same as wednesday
 
-- ### Friday
+### Friday
 - TP: [Common ancestor](https://github.com/tinazhouhui/tp-common-ancestor)
 - Lectures: [Data structured 3](data_structures.md/#graphs)
 - [Videos](https://drive.google.com/drive/folders/1Y33TG-LUG7N_ie0nddvgj3zwW8Zl8FkD)
 - same as wednesday
 
-- ### Saturday
-- TP: [Traversal spiral](https://github.com/tinazhouhui/tp-spiral-traversal), [master]()
+### Saturday
+- TP: [Traversal spiral](https://github.com/tinazhouhui/tp-spiral-traversal)
 - Lectures: [Algorithms 1](algorithms.md)
 - [Videos](https://drive.google.com/drive/folders/1VQHpv4WroxdSbsaAMiUO_yEEMiWwtcJD)
 - [Exercise](), [master]()
-- 
+
+## Week 3
+### Monday
+
+- WA: [Weekly assessment 2](https://github.com/tinazhouhui/weekly-assessment-2), [master]()
+- Lectures: [Algorithms 2](algorithms.md/#n-log-n-complexity)
+- [Videos]()
+- [Exercise](), [master]()
 - 
 - ### DAY
 - TP: [NAME](), [master]()

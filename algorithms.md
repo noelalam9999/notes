@@ -27,3 +27,30 @@
 - It’s written as O(n).
 - It grows proportional to the size of the problem.
 - Examples are for loops, and searching for an item in an array or a linked list.
+
+##N log n complexity
+- It’s written as O(n log n).
+- It grows “log n” times linear to the size of the problem (aka linearithmic).
+- combines logarithmic and linear complexity combined
+- An example is the merge sort algorithm.
+
+## Quadratic complexity
+- It’s written as O(n^2).
+- It grows squared to the size of the problem.
+- An example is a for loop inside another one.
+
+## Exponential complexity
+- It’s written as O(2^n).
+- It doubles each time the size of the problem increases by one.
+- different from quadratic as in quadratic size determines the base. but here size determines the exponent. which is worse.
+- opposite of logarithmic 
+- An example is generating all possible combinations from a list of elements (without repetitions).
+
+## Factorial complexity
+- It’s written as O(n!).
+- It grows factorial to the size of the problem.
+- An example is generating all possible permutations from a list of elements (without repetitions).
+- one of the worst cases
+
+## Comparison
+![img.png](media/img.png)
