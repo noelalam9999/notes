@@ -72,15 +72,14 @@
 - TP: [Traversal spiral](https://github.com/tinazhouhui/tp-spiral-traversal)
 - Lectures: [Algorithms 1](algorithms.md)
 - [Videos](https://drive.google.com/drive/folders/1VQHpv4WroxdSbsaAMiUO_yEEMiWwtcJD)
-- [Exercise](), [master]()
+- [Flavours of Sorts](https://github.com/tinazhouhui/flavors-of-sorts-exercise), [master]()
 
 ## Week 3
 ### Monday
-
-- WA: [Weekly assessment 2](https://github.com/tinazhouhui/weekly-assessment-2), [master]()
+- WA: [Weekly assessment 2](https://github.com/tinazhouhui/weekly-assessment-2)
 - Lectures: [Algorithms 2](algorithms.md/#n-log-n-complexity)
-- [Videos]()
-- [Exercise](), [master]()
+- [Videos](https://drive.google.com/drive/folders/1uQwDk4uwx-T33BQrNq00ETgMthGSlctO)
+- [same as saturday](https://github.com/tinazhouhui/flavors-of-sorts-exercise)
 - 
 - ### DAY
 - TP: [NAME](), [master]()
