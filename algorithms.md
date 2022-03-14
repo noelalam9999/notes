@@ -2,6 +2,8 @@
 - Clear and complete set of instruction to solve a problem
 - predictable and reliable outcome
 - abstract concept, independent of where it is executed (paper, code)
+- be aware of your complexity - time and space - huge impact of performance
+- possible to come up with your interview - learn to recognize patters (nested for loop is quadratic)
 
 ##Complexity analysis and big O notation
 - given an algorithm how does the number of operations to reach a solution change as its size increases
@@ -32,12 +34,14 @@
 - It’s written as O(n log n).
 - It grows “log n” times linear to the size of the problem (aka linearithmic).
 - combines logarithmic and linear complexity combined
-- An example is the merge sort algorithm.
+- An example is the merge sort algorithm. 
+- divide and conquer family of algorithms
 
 ## Quadratic complexity
 - It’s written as O(n^2).
 - It grows squared to the size of the problem.
 - An example is a for loop inside another one.
+- bubble sort is example of quadratic
 
 ## Exponential complexity
 - It’s written as O(2^n).
