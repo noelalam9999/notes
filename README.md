@@ -80,6 +80,12 @@
 - Lectures: [Algorithms 2](algorithms.md/#n-log-n-complexity)
 - [Videos](https://drive.google.com/drive/folders/1uQwDk4uwx-T33BQrNq00ETgMthGSlctO)
 - [same as saturday](https://github.com/tinazhouhui/flavors-of-sorts-exercise)
+
+### Tuesday
+- TP: [Diagonal difference](https://github.com/tinazhouhui/tp-diagonal-difference), [master]()
+- Lectures: [Algorithms 3]()
+- [Videos]()
+- [Exercise](), [master]()
 - 
 - ### DAY
 - TP: [NAME](), [master]()
