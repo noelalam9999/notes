@@ -72,7 +72,7 @@
 - TP: [Traversal spiral](https://github.com/tinazhouhui/tp-spiral-traversal)
 - Lectures: [Algorithms 1](algorithms.md)
 - [Videos](https://drive.google.com/drive/folders/1VQHpv4WroxdSbsaAMiUO_yEEMiWwtcJD)
-- [Flavours of Sorts](https://github.com/tinazhouhui/flavors-of-sorts-exercise), [master]()
+- [Flavours of Sorts](https://github.com/tinazhouhui/flavors-of-sorts-exercise), [master](https://github.com/tinazhouhui/flavors-of-sorts-exercise-master)
 
 ## Week 3
 ### Monday
@@ -82,12 +82,19 @@
 - [same as saturday](https://github.com/tinazhouhui/flavors-of-sorts-exercise)
 
 ### Tuesday
-- TP: [Diagonal difference](https://github.com/tinazhouhui/tp-diagonal-difference), [master]()
+- TP: [Diagonal difference](https://github.com/tinazhouhui/tp-diagonal-difference)
 - Lectures: [Algorithms 3]()
-- [Videos]()
-- [Exercise](), [master]()
-- 
-- ### DAY
+- [Videos](https://drive.google.com/drive/folders/1mStCfpd7XTy_X8As4ocdh273XFHaqGjg)
+- [Coding queens](https://github.com/tinazhouhui/coding-queens-exercise), [master]()
+
+### Wednesday
+- TP: [Prime tester](https://github.com/tinazhouhui/tp-prime-tester), [master]()
+- Lectures: [Algorithms 4](algorithms.md/#bitwise-operations)
+- [Videos](https://drive.google.com/drive/folders/147lx9fGaoBYwxsFPYB36txWpP3W1UUb_)
+- [Same as tuesday](https://github.com/tinazhouhui/coding-queens-exercise)
+
+
+### DAY
 - TP: [NAME](), [master]()
 - Lectures: [NOTES]()
 - [Videos]()
