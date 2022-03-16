@@ -82,3 +82,31 @@ two ways to traverse through a tree
 - preorder (Parent, Left, Right), create a new tree and insert
 - In-order (Left, Parent, Right) good for binary search trees
 - post-order (Right, Left, Parent) remove leaves before leaving the parent
+
+## Bitwise operations
+- Bitwise operations are performed on one or more binary numerals, at the level of their individual bits (smalles units of computing).
+- These are the fastest and most low-level operations that can be performed on a computer.
+- The operations and their corresponding JS operators, are:
+  - “NOT” ~ (reverses the bits, e.g. ~0 is 1). 
+  - “AND” & (is the boolean “and”, e.g. 0 & 1 is 0). 
+  - “OR” | (is the boolean “or”, e.g. 0 | 1 is 1). 
+  - “XOR” ^ (returns 1 if the compared values are different, e.g. 0 ^ 1 is 1). 
+  - “Left shift” << (shifts the bits to the left, e.g. 0101 << 1 is 1010). 
+  - “Sign-propagating right shift” >> (shifts the bits to the right, copying the “sign” bit, e.g. 1000 >> 1 is 1100). 
+  - “Zero-fill right shift” >>> (shifts the bits to the right, replacing the “sign” bit, e.g. 1000 >>> 1 is 0100).
+- signed integer 32 bit means that the first bit is used as a sign to determine if positive or negative
+- two's complement format - have all the bits flipped and add a +1 = this is to counter negative values
+
+![img.png](media/img.png)
+
+## Path finding
+- The two most popular algorithms to find the shortest path between two nodes in a graph are “Dijkstra” and “A*“. 
+- Dijkstra keeps exploring the least expensive node to reach from the last known location, and checks the shortest path to get there from the starting point, until it reaches the destination. 
+  - choose the unvisited node with the smallest known cost to visit first
+  - calculate the cost for each neighboring node by summing the cost of the edges that lead to the node from the starting vertex
+  - finally, if the cost to a node is less than a known distance, update the shortest distance that we have on file for that vertex
+- A* instead uses a heuristic function to understand if it’s getting closer to the destination, and decides its next move based on it. 
+  - visit hte closest unvisited node
+  - use the heuristic function
+- A* is faster than Dijkstra, but works only if the heuristic can estimate the target distance.
+  - if searching for an unknown position
