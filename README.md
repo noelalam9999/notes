@@ -88,11 +88,17 @@
 - [Coding queens](https://github.com/tinazhouhui/coding-queens-exercise), [master]()
 
 ### Wednesday
-- TP: [Prime tester](https://github.com/tinazhouhui/tp-prime-tester), [master]()
+- TP: [Prime tester](https://github.com/tinazhouhui/tp-prime-tester)
 - Lectures: [Algorithms 4](algorithms.md/#bitwise-operations)
 - [Videos](https://drive.google.com/drive/folders/147lx9fGaoBYwxsFPYB36txWpP3W1UUb_)
 - [Same as tuesday](https://github.com/tinazhouhui/coding-queens-exercise)
 
+### Thursday
+- TP: [Give me time](https://github.com/tinazhouhui/tp-give-me-time), [master]()
+- Lectures: [Networking](networking.md)
+- [Videos](https://drive.google.com/drive/folders/1FatlS_rSxabDTV8Er4U9HdV459hwfN5T)
+- [Exercise](), [master]()
+- 
 
 ### DAY
 - TP: [NAME](), [master]()

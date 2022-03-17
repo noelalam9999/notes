@@ -70,3 +70,8 @@ $.get('/weather', cb);
 - a real time behaviour can be simulated with all link - client sends request to server to check if there is anything new
 - WebRTC is a recent protocol, that allows clients to directly establish a peer-to-peer connection between them and share a data stream without passing through a server (e.g. audio, video, files, etc).
   - content transmitted does not get stored to third party server - security
+- web chat and messaging application, very intensive use of resources, but gives you live updates instead of server asking all the time whats new
+- http and websockets can live together, depends on usecase what to use
+
+
+- web server - actual computer and also an actual program that handles http requests
