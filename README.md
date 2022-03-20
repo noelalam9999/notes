@@ -106,13 +106,13 @@
 - TP: [Roman translator](https://github.com/tinazhouhui/tp-roman-numeral-translator)
 - Lectures: [Back end 1](backend.md)
 - [Videos](https://drive.google.com/drive/folders/1wIH-6P1XV4VlMSeFS7XpGIm3T_yGAdPz)
-- [Chat server](), [master]()
+- [Chat server](https://github.com/tinazhouhui/chat-server-exercise), [master]()
 
 ### Saturday
-- TP: [Fill paint](), [master]()
-- Lectures: [Back_end_2]()
-- [Videos]()
-- [Exercise](), [master]()
+- TP: [Fill paint](https://github.com/tinazhouhui/tp-paint-fill), [master]()
+- Lectures: [Back_end_2](backend.md/#errors)
+- [Videos](https://drive.google.com/drive/folders/1RpHyio97rD6zIgMiMsDbF7a8ysOgM8-D)
+- [sane as friday](https://github.com/tinazhouhui/chat-server-exercise)
 
 
 ### DAY
