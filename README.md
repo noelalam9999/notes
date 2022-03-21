@@ -1,14 +1,11 @@
 # Notes
 
 ## Week 1
-<details>
-<summary>Monday</summary>
-
+### Monday
 - TP: -
 - Lectures: Welcome
 - Videos: -
 - [Precourse](https://github.com/tinazhouhui/pre-course)
-</details>
 
 ### Tuesday
 - TP: [Two adds](https://github.com/tinazhouhui/tp-two-adds)
@@ -109,11 +106,17 @@
 - [Chat server](https://github.com/tinazhouhui/chat-server-exercise), [master]()
 
 ### Saturday
-- TP: [Fill paint](https://github.com/tinazhouhui/tp-paint-fill), [master]()
+- TP: [Fill paint](https://github.com/tinazhouhui/tp-paint-fill)
 - Lectures: [Back_end_2](backend.md/#errors)
 - [Videos](https://drive.google.com/drive/folders/1RpHyio97rD6zIgMiMsDbF7a8ysOgM8-D)
-- [sane as friday](https://github.com/tinazhouhui/chat-server-exercise)
+- [same as friday](https://github.com/tinazhouhui/chat-server-exercise)
 
+## Week 4
+### Monday
+- TP: [Weekly assessment 3](https://github.com/tinazhouhui/weekly-assessment-3), [master]()
+- Lectures: [Back_end_3](backend.md/#async-patterns)
+- [Videos](https://drive.google.com/drive/folders/1eCzodDFNlgbPYjWs1TdzBYvgkZDsZgwj)
+- [same as friday](https://github.com/tinazhouhui/chat-server-exercise)
 
 ### DAY
 - TP: [NAME](), [master]()
