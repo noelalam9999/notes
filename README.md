@@ -103,7 +103,7 @@
 - TP: [Roman translator](https://github.com/tinazhouhui/tp-roman-numeral-translator)
 - Lectures: [Back end 1](backend.md)
 - [Videos](https://drive.google.com/drive/folders/1wIH-6P1XV4VlMSeFS7XpGIm3T_yGAdPz)
-- [Chat server](https://github.com/tinazhouhui/chat-server-exercise), [master]()
+- [Chat server](https://github.com/tinazhouhui/chat-server-exercise), [master](https://github.com/tinazhouhui/chat-server-exercise-master)
 
 ### Saturday
 - TP: [Fill paint](https://github.com/tinazhouhui/tp-paint-fill)
@@ -113,10 +113,22 @@
 
 ## Week 4
 ### Monday
-- TP: [Weekly assessment 3](https://github.com/tinazhouhui/weekly-assessment-3), [master]()
+- TP: [Weekly assessment 3](https://github.com/tinazhouhui/weekly-assessment-3)
 - Lectures: [Back_end_3](backend.md/#async-patterns)
 - [Videos](https://drive.google.com/drive/folders/1eCzodDFNlgbPYjWs1TdzBYvgkZDsZgwj)
-- [same as friday](https://github.com/tinazhouhui/chat-server-exercise)
+- [Async Exercise](https://github.com/tinazhouhui/chat-server-exercise), [master](https://github.com/tinazhouhui/async-patterns-exercise-master)
+
+### Tuesday
+- TP: [Many invocations](https://github.com/tinazhouhui/tp-many-invocations), [master]()
+- Lectures: [Database_1](database.md)
+- [Videos](https://drive.google.com/drive/folders/1AzyDmhfiON03uO5lkARNxCODKCwCuqO_)
+- [Exercise](), [master]()
+
+### Wednesday
+- TP: [NAME](), [master]()
+- Lectures: [NOTES]()
+- [Videos]()
+- [Exercise](), [master]()
 
 ### DAY
 - TP: [NAME](), [master]()
