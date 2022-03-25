@@ -28,3 +28,145 @@
 
 [SQL cheat sheet](https://learnsql.com/blog/sql-basics-cheat-sheet/sql-basics-cheat-sheet-a4.pdf)
 [tutorial](https://sqlbolt.com/)
+
+## client
+- just a piece of software that allows us to connect to the database
+
+## ORM
+- ORM means “object relational mapping”.
+- ORM libraries allow to perform operations in a database, mapping them to “objects” that can be natively used in an object-oriented programming language.
+- customize validation as well as migration functions
+```javascript
+// models/user.js
+module.exports = (sequelize, DataTypes) => {
+  const User = sequelize.define('User', {
+    username: DataTypes.STRING
+  });
+  User.associate = db => {
+    db.User.hasMany(db.Task);
+  };
+  return User;
+};
+```
+```javascript
+// models/task.js
+module.exports = (sequelize, DataTypes) => {
+  const Task = sequelize.define('Task', {
+    title: DataTypes.STRING
+  });
+  Task.associate = db => {
+    db.Task.belongsTo(db.User, {
+      onDelete: "CASCADE",
+      foreignKey: { allowNull: false }
+    });
+  };
+  return Task;
+};
+```
+
+```javascript
+// models/index.js
+const fs = require('fs');
+const path = require('path');
+const Sequelize = require('sequelize');
+
+const config = {
+  host: 'localhost',
+  dialect: 'type'
+};
+
+const sequelize = new Sequelize('database', 'username', 'password', config);
+const db = {};
+
+const files = fs.readdirSync(__dirname);
+
+for (const file of files) {
+  if (file !== 'index.js') {
+    const model = require(path.join(__dirname, file))(sequelize, Sequelize.DataTypes);
+    db[model.name] = model;
+  }
+}
+
+for (const model in db) {
+  if (db[model].associate) db[model].associate(db);
+}
+
+db.sequelize = sequelize;
+db.Sequelize = Sequelize;
+
+module.exports = db;
+```
+
+```javascript
+// index.js
+const Koa = require('koa');
+const app = new Koa();
+
+const db = require('./models/index.js');
+const router = require('./router.js');
+
+app
+  .use(router.routes())
+  .use(router.allowedMethods());
+
+(async function bootstrap () {
+  await db.sequelize.sync();
+  app.listen(3000);
+})();
+```
+```javascript
+// router.js
+const Router = require('koa-router');
+
+const usrController = require('./controllers/user.js');
+
+const router = new Router();
+
+router.get('/', usrController.getAll);
+
+module.exports = router;
+```
+```javascript
+// controllers/user.js
+const fs = require('fs/promises');
+
+const db  = require('../models/index.js');
+const views = require('../views/index.js');
+
+exports.getAll = async ctx => {
+  const users = await db.User.findAll({ include: [ db.Task ] });
+  ctx.body = views.home({ users });
+};
+```
+```javascript
+// views/index.js
+const fs = require('fs');
+const path = require('path');
+const Handlebars = require('handlebars');
+
+const views = {};
+
+const files = fs.readdirSync(__dirname);
+
+for (const file of files) {
+  const ext = path.extname(file);
+  const name = path.basename(file, ext);
+  if (ext === '.html') {
+    const content = fs.readFileSync(path.join(__dirname, file), 'utf8');
+    views[name] = Handlebars.compile(content);
+  }
+}
+
+module.exports = views;
+```
+
+
+## Non-relational databases
+- Non-relational databases (aka “NoSQL”) don’t enforce any predefined structure on your data.
+- The main families of non-relational databases are: document, key-value, and graph.
+- They are more convenient to handle unstructured data or changing application requirements.
+- On the other hand, your application logic can make less assumptions on the data available, and efficient queries need to be built ad-hoc.
+- key-value - in RAM, very speed using key value pairs. Good for caching or session tokens
+- graph - best to store data that can be represented by graph - neo4J
+- relational - give you ACID - every transaction is either entirely executed or nothing at all
+- non relational - write speed, flexible schema, horizontal scaling
