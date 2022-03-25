@@ -122,13 +122,25 @@
 - TP: [Many invocations](https://github.com/tinazhouhui/tp-many-invocations), [master]()
 - Lectures: [Database_1](database.md)
 - [Videos](https://drive.google.com/drive/folders/1AzyDmhfiON03uO5lkARNxCODKCwCuqO_)
-- [Exercise](), [master]()
+- [Chat server db](https://github.com/tinazhouhui/chat-server-db-exercise), [master](https://github.com/tinazhouhui/chat-server-db-exercise-master/tree/master/server/mongo/REMOVE)
 
 ### Wednesday
-- TP: [NAME](), [master]()
-- Lectures: [NOTES]()
-- [Videos]()
-- [Exercise](), [master]()
+- TP: -
+- Lectures: [Database 2](database.md/#orm)
+- [Videos](https://drive.google.com/drive/folders/1ElIJo2lUhHK7DyVs3rd710moVe7Z5ySG)
+- [Same as tuesday](https://github.com/tinazhouhui/chat-server-db-exercise)
+
+### Thursday
+- TP: -
+- Lectures: [Database 3](database.md/#non-relational-databases)
+- [Videos](https://drive.google.com/drive/folders/18HFsx4y2BvccbPWBFleTspgH3JXQ_K--)
+- [Chat server mongo and mongoose](https://github.com/tinazhouhui/chat-server-db-mongo)
+
+### Friday
+- TP: [Counterfeit](https://github.com/tinazhouhui/tp-counterfeiter)
+- Lectures: [Advanced HTML and CSS](html_css.md)
+- [Videos](https://drive.google.com/drive/folders/1oiM1XZDiom0bh13DnY6JWJIWxPYSkQcA)
+- [Sexy chat](), [master]()
 
 ### DAY
 - TP: [NAME](), [master]()
