@@ -55,3 +55,19 @@
 - Are libraries that provide pre-built CSS rules for common use cases.
 - Common CSS frameworks are Bootstrap, Materialize, Bulma, and Tailwind.
 - Allow to quickly prototype a functional UI, but can be cumbersome if you later decide to customize styles.
+
+## PWA
+- Progressive Web Apps
+- Progressive Web Apps are a way of providing certain native desktop and mobile features to web apps.
+- PWAs use service workers, which are scripts that run in the background of the browser, providing caching, offline capabilities, and push notifications.
+- Each PWA needs a “manifest” file which is in JSON format and includes meta-information about the app, like the icon to launch it and the splash screen. - link in our html
+- PWAs aren’t fully supported by iOS devices, in particular native push notifications are not available.
+- lighthouse in chrome dev tools to check if PWA ready
+- downloadable, offline mode, camera access, push notifications
+- native app - up to 30% fees :( 
+- service workers - can perform cool features and then use them, mostly for chaching, push notiff. supported by most browsers
+- Apple does not support PWA as a lot of revenue come from appstore
+Benefits
+- fraction of size, can perform better
+- rebelling against fees of stores
+- PWA bridge between web and native apps

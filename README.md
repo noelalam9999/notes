@@ -119,7 +119,7 @@
 - [Async Exercise](https://github.com/tinazhouhui/chat-server-exercise), [master](https://github.com/tinazhouhui/async-patterns-exercise-master)
 
 ### Tuesday
-- TP: [Many invocations](https://github.com/tinazhouhui/tp-many-invocations), [master]()
+- TP: [Many invocations](https://github.com/tinazhouhui/tp-many-invocations)
 - Lectures: [Database_1](database.md)
 - [Videos](https://drive.google.com/drive/folders/1AzyDmhfiON03uO5lkARNxCODKCwCuqO_)
 - [Chat server db](https://github.com/tinazhouhui/chat-server-db-exercise), [master](https://github.com/tinazhouhui/chat-server-db-exercise-master/tree/master/server/mongo/REMOVE)
@@ -137,10 +137,17 @@
 - [Chat server mongo and mongoose](https://github.com/tinazhouhui/chat-server-db-mongo)
 
 ### Friday
-- TP: [Counterfeit](https://github.com/tinazhouhui/tp-counterfeiter)
+- TP: [Counterfeit Discord](https://github.com/tinazhouhui/tp-counterfeiter)
 - Lectures: [Advanced HTML and CSS](html_css.md)
 - [Videos](https://drive.google.com/drive/folders/1oiM1XZDiom0bh13DnY6JWJIWxPYSkQcA)
-- [Sexy chat](), [master]()
+- [Sexy chat](https://github.com/tinazhouhui/sexy-chat-exercise)
+
+### Saturday
+- TP: [Counterfeit Remix](https://github.com/tinazhouhui/tp-counterfeiter)
+- Lectures: [PWA](html_css.md/#pwa)
+- [Videos](https://drive.google.com/drive/folders/1ujXljoLIl4xPfZI5kyWazMyzHbAyhOq2)
+- [Exercise](), [master]()
+
 
 ### DAY
 - TP: [NAME](), [master]()
