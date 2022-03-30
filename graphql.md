@@ -8,6 +8,9 @@
 - resolver has the same name as the query
 - database agnostic, interacts with models just as well as any API
 - tell the structure of my data, tell what you want using queries, get the result that perfectly matches what we require
+
+
+
 ### why important?
 - strongly typed - decreases accidental errors
 - also much better readibility
