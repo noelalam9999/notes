@@ -146,8 +146,22 @@
 - TP: [Counterfeit Remix](https://github.com/tinazhouhui/tp-counterfeiter)
 - Lectures: [PWA](html_css.md/#pwa)
 - [Videos](https://drive.google.com/drive/folders/1ujXljoLIl4xPfZI5kyWazMyzHbAyhOq2)
-- [Exercise](), [master]()
+- [Same as friday](https://github.com/tinazhouhui/sexy-chat-exercise)
 
+
+### Monday
+- WA: [Weekly assignment 4](https://github.com/tinazhouhui/weekly-assessment-4)
+- Lectures: [GraohQL](graphql.md)
+- [Videos](https://drive.google.com/drive/folders/1gsgfLTNtti_fzF4vf_F_MPPtiwUFdmPW)
+- [GraphQL exercise](https://github.com/tinazhouhui/graphql-exercise), [master](https://github.com/tinazhouhui/graphql-exercise-master)
+
+### Tuesday
+- [Same as monday](https://github.com/tinazhouhui/graphql-exercise)
+
+### Wednesday
+- Lectures: [Angular](angular.md)
+- [Videos](https://drive.google.com/drive/folders/1u8REPnvH2pfzVXWnD5RohFEWGUv8uDkD)
+- [Exercise](), [master]()
 
 ### DAY
 - TP: [NAME](), [master]()
