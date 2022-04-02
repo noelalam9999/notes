@@ -303,3 +303,133 @@ export class QuoteComponent implements OnInit {
 
 <h1>{{quote}}</h1>
 ```
+
+## Reactive forms
+- Reactive forms enable you to handle the state of a form, and react to user input through observables.
+- You can validate user input with built-in attributes and validator functions, or by building custom ones.
+- dont forget to add `ReactiveFormModule` to app modules
+- 
+```typescript
+// form.component.ts
+
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
+
+@Component({
+  selector: 'app-form',
+  templateUrl: './form.component.html',
+  styleUrls: ['./form.component.css']
+})
+
+export class FormComponent implements OnInit {
+
+  loginForm = this.formBuilder.group({
+    firstName:["", Validators.required],  // validator to validate input data
+    lastName: "",
+    email: ["", Validators.required],
+    password: ["", [Validators.required, Validators.minLength(8)]]
+  })
+
+  constructor(private formBuilder: FormBuilder) { }  // built in formModule
+
+  ngOnInit(): void {
+    this.loginForm.valueChanges.subscribe(form => { // on change we get a console log (every letter)
+      console.log(form);
+    })
+  }
+
+  handleSubmit () {
+    console.log(this.loginForm.value);
+    // POST to a server
+    this.loginForm.reset();
+  }
+}
+```
+
+```angular2html
+<form [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
+  <input
+    placeholder="First Name"
+    formControlName="firstName"  <!--have to be the same as in the loginForm group--> 
+  />
+  <input
+    placeholder="Last Name"
+    formControlName="lastName"
+  />
+  <input
+    placeholder="Email"
+    formControlName="email"/>
+  <input
+    type="password"
+    placeholder="Password"
+    formControlName="password"
+  />
+  <button
+    type="submit"
+    [disabled]="loginForm.invalid">  <!--will be disabled until all form validators are met-->
+    Submit
+  </button>
+</form>
+```
+## Angular routing
+- You can use the router to change page content based on the current URL value.
+- To navigate between different views, you can use the routerLink property or the navigate method.
+- You can set up wildcard routes to provide a customizable 404 page.
+- You can pass params through route changes with the ActivatedRoute interface.
+- Single page application - no loading additional files, just showing and not showing some components
+- dont forget to add app routing module to app.modules
+
+```typescript
+const routes: Routes = [
+  {path: '', component: HomeComponent},  // home page
+  {path: 'account', component: AccountComponent}, // shows how to route to a different component
+  {path: 'playerDetails/:id', component: PlayerDetailsComponent}, // shows how to route inside function logic
+  {path: '**', component: NotFoundComponent}, // shows 404 catch all
+]
+```
+```angular2html
+<router-outlet></router-outlet> <!--this goes tot the app.component.html-->
+```
+```angular2html
+<p>Home page</p>
+<a routerLink = '/account'>Navigate to account page</a>  <!--has to be a routerLink, otherwise we will actually change the page-->
+<a (click)="handleClick()"> Player Details </a>
+```
+- what if I want to use the redirect in function logic
+
+```typescript
+export class HomeComponent implements OnInit {
+  id: number;
+
+  constructor(private Router: Router) { // imported from router module
+  }
+  
+  handleClick () {
+      const id = prompt('Please enter your player ID');
+      
+      if (id !== null) {
+          this.Router.navigate([`playerDetails/${id}`]);
+      }
+  }
+}
+```
+```typescript
+// this is my player details component
+
+export class PlayerDetailsComponent implements OnInit {
+  id: number = 0;
+
+  constructor(private ActivatedRoute: ActivatedRoute) { // imported from router module
+  }
+  
+  handleClick () {
+      const id = prompt('Please enter your player ID');
+      
+      if (id !== null) {
+          this.ActivatedRoute.params.forEach(params => this.id = +params.id) // convert to a number
+      }
+  }
+}
+
+```
+- 404 catch all route as last route with ** to catch everything if we do not find the route
