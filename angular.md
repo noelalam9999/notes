@@ -380,12 +380,25 @@ export class FormComponent implements OnInit {
 - dont forget to add app routing module to app.modules
 
 ```typescript
+  
+  
+import { NgModule } from '@angular/core';
+import {RouterModule, Routes} from "@angular/router";
+import {DashboardComponent} from "./components/dashboard/dashboard.component";
+import {MovieComponent} from "./components/movie/movie.component";
+
 const routes: Routes = [
   {path: '', component: HomeComponent},  // home page
   {path: 'account', component: AccountComponent}, // shows how to route to a different component
   {path: 'playerDetails/:id', component: PlayerDetailsComponent}, // shows how to route inside function logic
   {path: '**', component: NotFoundComponent}, // shows 404 catch all
 ]
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
 ```
 ```angular2html
 <router-outlet></router-outlet> <!--this goes tot the app.component.html-->
