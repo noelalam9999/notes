@@ -440,6 +440,7 @@ export class PlayerDetailsComponent implements OnInit {
       
       if (id !== null) {
           this.ActivatedRoute.params.forEach(params => this.id = +params.id) // convert to a number
+          const id: number = parseInt(this.ActivatedRoute.snapshot.paramMap.get('playerId')!, 10) // this will get me the id based on how I defined it in the routing module
       }
   }
 }
