@@ -148,7 +148,7 @@
 - [Videos](https://drive.google.com/drive/folders/1ujXljoLIl4xPfZI5kyWazMyzHbAyhOq2)
 - [Same as friday](https://github.com/tinazhouhui/sexy-chat-exercise)
 
-
+## Week 5
 ### Monday
 - WA: [Weekly assignment 4](https://github.com/tinazhouhui/weekly-assessment-4)
 - Lectures: [GraohQL](graphql.md)
@@ -159,9 +159,30 @@
 - [Same as monday](https://github.com/tinazhouhui/graphql-exercise)
 
 ### Wednesday
-- Lectures: [Angular](angular.md)
+- Lectures: [Angular 1](angular.md)
 - [Videos](https://drive.google.com/drive/folders/1u8REPnvH2pfzVXWnD5RohFEWGUv8uDkD)
-- [Exercise](), [master]()
+- [Angular hero tour tutorial](https://github.com/tinazhouhui/angular-hero-tour), [master](https://angular.io/tutorial)
+
+### Thursday
+- Lectures: [Angular 2](angular.md)
+- [Videos](https://drive.google.com/drive/folders/1pHCW34S61rbCRn490EK_tkDeWxtpv4MZ)
+- [Movied Angular](https://github.com/tinazhouhui/movied-angular-exercise), [master](https://github.com/tinazhouhui/movied-angular-exercise-master)
+
+### Friday
+- Lectures: [Angular 3](angular.md)
+- [Videos](https://drive.google.com/drive/folders/1AWOKtnkejrR2Hc9mjEpq99PiMlZa8gdZ)
+- Same as thursday
+
+### Saturday
+- [Pokemon](https://github.com/tinazhouhui/angular-pokemon-exercise), [master](https://github.com/tinazhouhui/angular-pokemon-exercise-master)
+
+## Week 6
+### Monday
+- WA: [Weekly assingment 5](https://github.com/tinazhouhui/weekly-assessment-5)
+- Lectures: [React 1](react.md)
+- [Videos](https://drive.google.com/drive/folders/1sW06mjWWbNDZewtZsQzgy8cHDgYawn9N)
+- [Netflix React](), [master]()
+
 
 ### DAY
 - TP: [NAME](), [master]()
