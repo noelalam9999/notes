@@ -181,7 +181,17 @@
 - WA: [Weekly assingment 5](https://github.com/tinazhouhui/weekly-assessment-5)
 - Lectures: [React 1](react.md)
 - [Videos](https://drive.google.com/drive/folders/1sW06mjWWbNDZewtZsQzgy8cHDgYawn9N)
-- [Netflix React](), [master]()
+- [React tutorial](), [master](https://reactjs.org/tutorial/tutorial.html)
+
+### Tuesday
+- Lectures: [React 2](react.md)
+- [Videos](https://drive.google.com/drive/folders/1590k5U6MyTUxs61I0Yxvyo43GszmHXJf)
+- [Netflix react](https://github.com/tinazhouhui/weekly-assessment-5)
+
+### Wednesday
+- Lectures: [React 2](react.md)
+- [Videos](https://drive.google.com/drive/folders/1eJy3Swv8ZmwrQRbMgkTzSst5Bp9E8S_i)
+- [Netflix react](https://github.com/tinazhouhui/netflix-react-exercise), [master]()
 
 
 ### DAY

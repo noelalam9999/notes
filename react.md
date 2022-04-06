@@ -164,3 +164,139 @@ function Header(props) {
   )
 }
 ```
+
+##Lifecycle methods
+- Are used to trigger a custom logic in certain pre-defined moments of a class component life.
+- componentDidMount is invoked after the first render of a component. We use this method to perform actions that cause side effects (e.g. fetching data from an API).
+- componentDidUpdate is invoked after every render (excluding the first one) and is used to perform actions that need to happen when changes have occurred.
+- componentWillUnmount is called when a component is going to be removed from the DOM, and should be used to perform any cleanup logic (e.g. clearing an interval).
+
+## Hooks
+- functions that give us special functionalities
+- must be called at top level and inside a rect function unless using custom hooks
+
+- Allow us to gain all the functionality available to class components, inside functional components.
+- The useState() hook can be called inside a function component to add local state to it. It’s a function that takes the initial state value and returns an array with two elements: a variable that is tied to the current state value, and a function to update it.
+- The useEffect() hook gives the ability to perform side effects from a function component, implementing logic that is executed after the render phase. It serves the same purpose as componentDidMount(), componentDidUpdate(), and componentWillUnmount() in React classes, but unified into a single API. It takes two arguments. The first one is the callback that contains the side effects logic. The second one is the “dependency array” and is optional.
+- The dependency array indicates to React what you want to “track”. Depending on the dependency array status, the useEffect() function is run according to the following rules:
+- If there is no array, at initial render and after every update (track everything).
+- If the array is empty, only after the initial render (don’t track anything).
+- If the array contains elements, after the initial render and every time the data changes (track specific elements).
+- You can also build custom hooks, which can combine multiple hooks to provide reusable functionality across your app.
+- Hooks can only be called inside React function components or custom hooks and should never be invoked conditionally.
+
+## useState
+- updating the state
+- takes only initial state as argument
+- setter are async so use ReactDevTools
+
+## useEffect
+- dependency array
+- can have multiple useEffects in a component
+
+Class component
+```jsx
+class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    this.setState({ count: this.state.count + 1 })
+  }
+  componentDidMount() {
+    document.title = `You clicked ${this.count} times`;
+  }
+  render() {
+    return (
+      <>
+        <p>You clicked {this.state.count} times</p>
+        <button onClick={() => this.handleClick()}>
+          Click me
+        </button>
+      </>
+    )
+  }
+}
+```
+
+Function component
+```jsx
+import React, { useState, useEffect } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = `You clicked ${count} times`;
+  });
+
+  return (
+    <>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </>
+  );
+}
+```
+
+## Context
+- to avoid props drilling
+- Is generated using `React.createContext()` and allows to directly share data across different components.
+- Data can be consumed invoking the useContext() hook and passing the desired context as argument.
+- Data can also be shared across components by using the context Provider and Consumer property.
+- create context, context provider (takes value), useContex hook
+- 
+
+## Forms
+- React forms replace the default HTML form behaviour, and allow to add custom submission logic, gaining access to the form data.
+- You can save input, textArea and select values in a component state through onChange handlers. These values in the state are then connected back to the HTML form through the value property of the original field, thus creating a single source of truth. This is also known as two-way binding.
+- You can reset the form fields at any time by modifying the component state, and you can add a custom submit handler using the onSubmit prop.
+- controlled component
+
+Class component
+```jsx
+class MyForm extends React.Component {
+  state = { name: '' }
+  handleChange = (event) => {
+    this.setState({ name: event.target.value })
+  }
+  handleSubmit = (event) => {
+    event.preventDefault()
+    // add custom submit logic here...
+    this.setState({ name: '' }) // reset the input field
+  }
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <input type="text" value={this.state.name} onChange={this.handleChange} />
+        <button type="submit"> Submit </button>
+      </form>
+    )
+  }
+}
+```
+
+Functional component
+```jsx
+function MyForm() {
+  const [name, setName] = useState('')
+  function handleChange(event) {
+    setName(event.target.value)
+  }
+  function handleSubmit(event) {
+    event.preventDefault()
+    // add some logic here 
+    setName('') // reset the input field 
+  }
+  return (
+    <form onSubmit={handleSubmit}>
+      <input type="text" value={name} onChange={handleChange} />
+      <button type="submit"> Submit </button>
+    </form>
+  )
+}
+```
