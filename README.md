@@ -191,7 +191,7 @@
 ### Wednesday
 - Lectures: [React 3](react.md)
 - [Videos](https://drive.google.com/drive/folders/1eJy3Swv8ZmwrQRbMgkTzSst5Bp9E8S_i)
-- [Netflix react](https://github.com/tinazhouhui/netflix-react-exercise), [master]()
+- [Netflix react](https://github.com/tinazhouhui/netflix-react-exercise), [master](https://github.com/tinazhouhui/netflix-react-exercise-master)
 
 ### Thursday
 - weekly assignment 5 review
@@ -200,7 +200,7 @@
 - Weekly assignment 6 and graduation
 
 ## Week 7 SENIOR PART
-### DAY
+### Monday
 - Lectures: [Security](security.md)
 - [Videos](https://drive.google.com/drive/folders/18q1WsL2RL6H5Epfj-gRm-6y9YzvODaTs)
 - [Exercise](), [master]()

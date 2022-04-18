@@ -32,7 +32,8 @@
 - To defend from these attacks the core principle is to never trust user input. You need to always sanitize it, by removing any characters that your system can consider as code to execute, escape user inputs, sanitize html outputs
 - Also you should only use external libraries coming from trusted sources.
 - Cross-site request forgery (CSRF) is a client-side attack that happens when you visit a malicious website that is sending HTTP requests to a server where you previously logged in, taking advantage of the credentials stored in your browser’s cookies.
-- You can protect from CSRF using the SameSite attribute in the Set-Cookie response header.
+- You can protect from CSRF using the SameSite attribute in the Set-Cookie response header. Synchroniser tokens.
+- cookies - authorization and session information
 
 ## Denial of service
 - Aka DoS aims at taking a system down or making it unusable.
@@ -43,3 +44,7 @@
 - Is the secure version of HTTP.
 - Is based on asymmetric encryption. Each party shares a public key with the other, which uses it to encrypt any messages to be sent back. Such messages then can only be decrypted with the private key that is kept by the owner who originally sent the public key.
 - SSL certificates accompany public keys to confirm the identity of a sender, which is verified by a certificate authority.
+- public key - is like a lock, private key is the key that can unlock. it can also work the other way, encrypt with private key and decrypt with public key but why would you do that.
+- private keys can be used as signing mechanisms - authentication token does not contain any protected content so it is ok to use private key
+- website apply for SSL - websites public key is included in certificate.
+  <img alt="img.png" src="img_ssl.png"/>
