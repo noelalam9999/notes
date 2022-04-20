@@ -203,9 +203,14 @@
 ### Monday
 - Lectures: [Security](security.md)
 - [Videos](https://drive.google.com/drive/folders/18q1WsL2RL6H5Epfj-gRm-6y9YzvODaTs)
-- [Exercise](), [master]()
+- [Secure it](https://github.com/tinazhouhui/secure-it-exercise)
+
+### Tuesday
+- Lectures: [Authentication](authentication.md)
+- [Videos](https://drive.google.com/drive/folders/10ZOq9J29s2mIIUbw5JxNmssd6wS4_2ne)
+- [Auth it](), [master]()
 
 ### DAY
 - Lectures: [NOTES]()
 - [Videos]()
-- [Secure it](), [master]()
+- [Exercise](), [master]()
