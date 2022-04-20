@@ -249,7 +249,57 @@ function Example() {
 - Data can be consumed invoking the useContext() hook and passing the desired context as argument.
 - Data can also be shared across components by using the context Provider and Consumer property.
 - create context, context provider (takes value), useContex hook
-- 
+- examples:
+  - [where context is declared](https://github.com/tinazhouhui/netflix-react-exercise/blob/master/my-app/src/App.tsx#L19)
+  - [where context is used](https://github.com/tinazhouhui/netflix-react-exercise/blob/master/my-app/src/components/CategoryButton/CategoryButton.tsx#L9)
+
+
+Functional component
+```jsx
+// declaring context
+export const MyContext = React.createContext();
+
+function App () {
+  
+  const [myList, setMylist] = useState([]);
+  
+  function myfunction () {
+    return 'Hello';
+  }
+  
+  const context = {
+    myfunction,
+    mylist
+  }
+  return (
+    <div className="App">
+      <MyContex.Provider values = {context}>
+        <ComponentThatNeedsContext/>
+      </MyContex.Provider>
+    </div>
+    
+  )
+}
+
+export default App;
+
+// using context
+import {MyContext} from '../../App'  //or wherever we have declared it
+
+function ComponentThatNeedsContext () {
+
+  const myContext = React.useContext(MyContext)
+  myContext.myfunction();
+  
+  return (
+    <>
+      {myContext.mylist}
+    </>
+  )
+};
+
+export default ComponentThatNeedsContext;
+```
 
 ## Forms
 - React forms replace the default HTML form behaviour, and allow to add custom submission logic, gaining access to the form data.
