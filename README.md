@@ -208,7 +208,12 @@
 ### Tuesday
 - Lectures: [Authentication](authentication.md)
 - [Videos](https://drive.google.com/drive/folders/10ZOq9J29s2mIIUbw5JxNmssd6wS4_2ne)
-- [Auth it](), [master]()
+- [Auth it](https://github.com/tinazhouhui/auth-it-exercise), [master](https://github.com/tinazhouhui/auth-it-exercise-master)
+
+### Wednesday
+- Lectures: [Redux 1](redux.md)
+- [Videos](https://drive.google.com/drive/folders/1ZmhyWBavFLPO47c05lkaIJXRyBfGLOri)
+- [Exercise](https://github.com/tinazhouhui/redux-intro-exercise), [master]()
 
 ### DAY
 - Lectures: [NOTES]()
