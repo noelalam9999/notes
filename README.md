@@ -215,7 +215,64 @@
 - [Videos](https://drive.google.com/drive/folders/1ZmhyWBavFLPO47c05lkaIJXRyBfGLOri)
 - [Exercise](https://github.com/tinazhouhui/redux-intro-exercise), [master]()
 
-### DAY
-- Lectures: [NOTES]()
+### Thursday
+- solo project
+
+### Friday
+- Lectures: [Automation tools](Automation_tools.md)
+- [Videos](https://drive.google.com/drive/folders/1_qi5ZqOA8grHgSR6FWLlkeglN4tFkXmR)
+- solo project
+
+### Saturday
+- solo project
+
+## Week 8 
+### Monday
+- solo project
+
+### Tuesday
+- Lectures: [Deployment](deployment.md)
+- [Videos](https://drive.google.com/drive/folders/1zH9wGeEwoseHOGy-1_JXn87QligaAjEF)
+- solo project
+
+### Wednesday
+- Lectures: [Legacy project orientation]()
+- [Videos](https://drive.google.com/drive/folders/1H08Rh_2QBQch50_EGlQPlOL19T2lCjtQ)
+- solo project demo
+
+### Thursday
+- Lectures: [Advanced git](advanced_git.md)
+- [Videos](https://drive.google.com/drive/folders/1Z1rNOpnDqoGIdiRrqDu-KFUBvqSP9faS)
+- legacy project
+
+### Friday
+- Lectures: [Fullstack testing]()
+- [Videos](https://drive.google.com/drive/folders/18BdDDaVXGwO07koXOOrgyJXKN0QEylA2)
+- legacy project
+
+### Saturday
+- legacy project
+
+## Week 9
+### Monday
+- legacy project
+
+### Tuesday
+- Lectures: [Clean Code](clean_code.md)
+- [Videos](https://drive.google.com/drive/folders/12mmZML5jBU1PTBm-VMa_jruPxjcj4uY-)
+- legacy project
+
+### Wednesday
+- legacy project
+
+### Thursday
+- legacy project demo
+- thesis orientation
+
+### Friday
+- Lectures: [Notes]()
 - [Videos]()
-- [Exercise](), [master]()
+- thesis project
+
+
+
