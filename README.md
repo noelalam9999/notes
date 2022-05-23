@@ -282,7 +282,7 @@
 
 ### Wednesday
 - Lectures: [Docker](docker.md)
-- [Videos]()
+- [Videos](https://drive.google.com/drive/folders/1LeEXDtZxuH8I3Tb4ql64igzdIyMBJIrK)
 - thesis project
 
 ### Thursday
