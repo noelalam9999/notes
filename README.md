@@ -270,9 +270,49 @@
 - thesis orientation
 
 ### Friday
-- Lectures: [Notes]()
+- legacy project demo
+- thesis orientation
+
+## Week 10
+### Monday
+- thesis project
+
+### Tuesday
+- thesis project
+
+### Wednesday
+- Lectures: [Docker](docker.md)
 - [Videos]()
 - thesis project
+
+### Thursday
+- thesis project
+
+### Friday
+- thesis project
+
+### Saturday
+- thesis project
+
+## Week 11
+### Monday
+- thesis project
+
+### Tuesday
+- thesis project
+
+### Wednesday
+- thesis project
+
+### Thursday
+- thesis project
+
+### Friday
+- Lectures: [Job preparation](job_preparation.md)
+
+### Saturday
+- Lectures: [Interview strategy](interview_strategy.md)
+
 
 
 
